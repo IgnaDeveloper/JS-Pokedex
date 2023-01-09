@@ -1,3 +1,5 @@
+import darkTheme from "./tema_oscuro.js";
+
 const d = document,
   $listaPokemon = d.querySelector("#listaPokemon"),
   $botonesHeader = d.querySelectorAll(".btn-header");
@@ -87,3 +89,5 @@ d.addEventListener("keyup", (e) => {
     });
   }
 });
+
+darkTheme(".dark-theme-btn", "bg-dark");

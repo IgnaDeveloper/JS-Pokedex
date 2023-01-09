@@ -49,6 +49,12 @@ body {
   min-height: 100vh;
   background-color: var(--clr-gray);
 }
+.bg-gray {
+  background-color: var(--clr-gray);
+}
+.bg-dark {
+  background-color: var(--clr-black);
+}
 header {
   padding-block: 1rem;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
@@ -185,6 +191,29 @@ main {
   visibility: hidden;
   opacity: 0;
   order: 1;
+}
+
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--type-electric);
+  color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.dark-theme-btn:hover {
+  background-color: var(--type-dark);
+  color: var(--main-color);
 }
 /* MEDIA QUERYES */
 @media screen and (min-width: 480px) {
